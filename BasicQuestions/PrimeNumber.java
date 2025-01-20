@@ -5,24 +5,26 @@ import java.util.Scanner;
 public class PrimeNumber {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the number to check prime or not");
-        int n = sc.nextInt();
-        int flag=0;
 
-        for(int i=1;i<=n;i++){
-            if(n%i==0){
-                flag = 1;
-                return;
-            }
-            else{
-                flag = 0;
+        System.out.println("Enter the number: - ");
+        int n = sc.nextInt();
+        boolean isPrime = true;
+
+        if (n <= 1) {
+            System.out.println("1 is not Prime Number");
+            return;
+        }else {
+            for(int i=2;i <= Math.sqrt(n);i++){
+                if(n%i == 0){
+                    isPrime = false;
+                    break;
+                }
             }
         }
-        if(flag>1){
-            System.out.println("Number is prime");
-        }
-        else{
-            System.out.println("Number is not prime");
+        if(isPrime){
+            System.out.println(n+" is Prime Number");
+        }else{
+            System.out.println(n+" is not Prime Number");
         }
     }
 }
