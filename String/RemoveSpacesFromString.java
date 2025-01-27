@@ -1,8 +1,13 @@
 package DSA.String;
 
+import java.util.Scanner;
+
 public class RemoveSpacesFromString {
     public static void main(String[] args) {
-        String t = "Hi There";
+        Scanner sc = new Scanner(System.in);
+        String t = sc.nextLine();
+
         System.out.println(t.replace(" ",""));
+
     }
 }
