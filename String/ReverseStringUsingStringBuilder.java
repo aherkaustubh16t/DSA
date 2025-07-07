@@ -3,8 +3,15 @@ package DSA.String;
 public class ReverseStringUsingStringBuilder {
     public static void main(String[] args) {
         String t = "Kaustubh";
-        StringBuilder reversed = new StringBuilder(t);
-        reversed.reverse();
-        System.out.println(reversed);
+
+        StringBuilder sb = new StringBuilder("");
+
+        char [] chars= t.toCharArray();
+
+        for(int i=chars.length-1;i>=0;i--){
+            sb.append(chars[i]);
+        }
+        System.out.println(sb);
+
     }
 }
