@@ -22,13 +22,6 @@ This repository contains my personal collection of Data Structures and Algorithm
 
 ---
 
-## 🧪 Sample Utility Problems
-
-- `ChecktheVowelsInString.java` – Check and count vowels in a string.  
-- `SwapingNumbersWithAddAndSubstract.java` – Swap two numbers without using a third variable.  
-
----
-
 ## 📚 Resources Used
 
 - [LeetCode](https://leetcode.com/)  
