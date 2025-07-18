@@ -2,13 +2,14 @@ package DSA.Patterns;
 
 public class HollowRectangle {
     public static void main(String[] args) {
-        int m = 4,n=5;
-        for(int i = 0 ; i<m ;i++){
-            for(int j =0 ;j<n ;j++){
-                if(i==0 || j==0 || i==m-1 || j==n-1){
+        int y = 5;
+        int x = 8;
+
+        for(int i=0; i<y; i++){
+            for(int j=0; j<x; j++){
+                if(i==0 || i==(y-1) || j==0 || j==(x-1)){
                     System.out.print("*");
-                }
-                else{
+                }else{
                     System.out.print(" ");
                 }
             }
