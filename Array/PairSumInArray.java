@@ -7,7 +7,7 @@ public class PairSumInArray {
                 if(nums[i]+nums[j]==target){
                     System.out.println("Pair Found - "+nums[i]+","+ nums[j]);
                 }
-
+ 
             }
         }
     }
